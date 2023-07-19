@@ -3,22 +3,23 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-//        task1();
+        task1();
         task2();
+        task3();
     }
 
-//    public static void task1() {
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Задача 1");
-//        System.out.println("Введите имя:");
-//        String firstName = scanner.next();
-//        System.out.println("Введите отчество:");
-//        String middleName = scanner.next();
-//        System.out.println("Введите фамилию:");
-//        String lastName = scanner.next();
-//        String fullName = lastName + " " + firstName + " " + middleName;
-//        System.out.println("ФИО сотрудника - " + fullName);
-//    }
+    public static void task1() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Задача 1");
+        System.out.println("Введите имя:");
+        String firstName = scanner.next();
+        System.out.println("Введите отчество:");
+        String middleName = scanner.next();
+        System.out.println("Введите фамилию:");
+        String lastName = scanner.next();
+        String fullName = lastName + " " + firstName + " " + middleName;
+        System.out.println("ФИО сотрудника - " + fullName);
+    }
 
     public static void task2() {
         Scanner scanner = new Scanner(System.in);
@@ -33,5 +34,10 @@ public class Main {
         System.out.println("Данные ФИО сотрудника для заполнения отчета — " + fullName.toUpperCase(Locale.ROOT));
     }
 
-
+    public static void task3() {
+        System.out.println("Задача 3");
+        String fullName = "Иванов Семён Семёнович";
+        fullName = fullName.replace("ё", "е");
+        System.out.println("Данные ФИО сотрудника — " + fullName);
+    }
 }
